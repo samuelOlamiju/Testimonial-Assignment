@@ -1,14 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --bg:#d6f6f4dd;
-    --pr: #003cff;
+    --bg:#d6f7f7dd;
+    --pr: #48a5e8;
 }
 
 * {margin: 0;padding: 0;box-sizing: border-box;}
-body{font-size: 85%;font-family: "Roboto", sans-serif; text-align:center;}
+body{font-size: 85%;font-family: "Roboto", sans-serif; text-align:center; background: var(--bg);}
 
 .container{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;gap: 100px;}
 
 .title h2{font-size: 2.5rem;font-weight: 500;}
 .title > div{margin: 0 auto;width: 4rem; padding: 1.5px; background: var(--pr);}
+
+.review{max-width: 35rem; padding: 2rem; background: #fff;; box-shadow: rgba(0, 0, 0, 0.117) -3px 3px 20px;}
+.review > *{margin-bottom: 1rem;}
+
+.img-container{max-width: 100px; border-radius: 50%;background: var(--pr); display: flex; justify-self: center;}
+img{max-width: 100px; object-position: bottom; object-fit: contain; border-radius: 50%; position: relative; top: 5px; right: 5px;}
+
+.author{letter-spacing: 3px;}
+.job{text-transform: uppercase; color: var(--pr);}
+.info{font-size: 1rem; color:#617d98}
+
+.button-container{display: flex; gap: 2rem; justify-content: center;}
+.btn{color: var(--pr); background: none; border: none; font-size: 1.2rem; cursor: pointer;}
+
+.random-btn{background: var(--bg); padding: 7px; color: var(--pr); border-radius: 5px; cursor: pointer; transition: all .7s;}
+.random-btn:hover{background: var(--pr);  color: #fff;}
