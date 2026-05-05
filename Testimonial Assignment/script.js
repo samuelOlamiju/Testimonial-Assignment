@@ -2,27 +2,37 @@
 
 const reviews = [
   {
-    name: "Samuel Olamiju",
+    author: "Samuel Olamiju",
     job: "FullStack Developer",
-    img: "./images/person-1.jpg",
-    text: "Samuel is a fullstack developer with 3 years experience."
+    img: "./assets/Emrys.jpeg",
+    info: "Samuel is a fullstack developer with 3 years experience."
   },
   {
-    name: "Susan Smith",
+    author: "Susan Smith",
     job: "Web Developer",
-    img: "./images/person-1.jpg",
-    text: "Susan is a frontend developer with 3 years experience."
+    img: "./assets/Emrys.jpeg",
+    info: "Susan is a frontend developer with 3 years experience."
   },
   {
-      name: "John Doe",
+      author: "John Doe",
     job: "Designer",
-    img: "./images/person-2.jpg",
-    text: "John is a UI/UX designer who loves minimal layouts."
+    img: "./assets/Emrys.jpeg",
+    info: "John is a UI/UX designer who loves minimal layouts."
   },
   {
-    name: "Peter Jones",
+    author: "Peter Jones",
     job: "Intern",
-    img: "./images/person-3.jpg",
-    text: "Peter is an intern learning JavaScript and React."
+    img: "./assets/Emrys.jpeg",
+    info: "Peter is an intern learning JavaScript and React."
   }
 ];
+
+const img = document.querySelector("#person-img")
+const author = document.querySelector(".author")
+const job = document.querySelector(".job")
+const info = document.querySelector(".info")
+
+img.src = reviews[0].img;
+author.textContent = reviews[0].author;
+job.textContent = reviews[0].job;
+info.textContent = reviews[0].info;
