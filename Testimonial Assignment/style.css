@@ -16,8 +16,22 @@ body{font-size: 85%;font-family: "Roboto", sans-serif; text-align:center; backgr
 .review{max-width: 35rem; padding: 2rem; background: #fff;; box-shadow: rgba(0, 0, 0, 0.117) -3px 3px 20px;}
 .review > *{margin-bottom: 1rem;}
 
-.img-container{max-width: 100px; border-radius: 50%;background: var(--pr); display: flex; justify-self: center;}
-img{max-width: 100px; object-position: bottom; object-fit: contain; border-radius: 50%; position: relative; top: 5px; right: 5px;}
+.img-container{max-width: 150px; border-radius: 50%;background: var(--pr); display: flex; justify-self: center;}
+img{max-width: inherit; object-position: bottom; object-fit: contain; border-radius: 50%; position: relative; top: 5px; right: 5px;}
+.img-container::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 15px;
+    content: "\f10e";
+    position: relative;
+    top: 12px;
+    right: 150px;
+    color: #fff;
+    background-color: #48a5e8;
+    padding: 12px;
+    height: fit-content;
+    border-radius: 50%;
+}
 
 .author{letter-spacing: 3px;}
 .job{text-transform: uppercase; color: var(--pr);}
