@@ -6,9 +6,9 @@
 }
 
 * {margin: 0;padding: 0;box-sizing: border-box;}
-body{font-size: 85%;font-family: "Roboto", sans-serif; text-align:center; background: var(--bg);}
+body{font-size: 85%;font-family: "Roboto", sans-serif; text-align:center; background: var(--bg); padding: 50px 20px;}
 
-.container{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;gap: 100px;}
+.container{min-height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center;gap: 100px;}
 
 .title h2{font-size: 2.5rem;font-weight: 500;}
 .title > div{margin: 0 auto;width: 4rem; padding: 1.5px; background: var(--pr);}
@@ -18,24 +18,11 @@ body{font-size: 85%;font-family: "Roboto", sans-serif; text-align:center; backgr
 
 .img-container{max-width: 150px; border-radius: 50%;background: var(--pr); display: flex; justify-self: center;}
 img{max-width: inherit; object-position: bottom; object-fit: contain; border-radius: 50%; position: relative; top: 5px; right: 5px;}
-.img-container::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 15px;
-    content: "\f10e";
-    position: relative;
-    top: 12px;
-    right: 150px;
-    color: #fff;
-    background-color: #48a5e8;
-    padding: 12px;
-    height: fit-content;
-    border-radius: 50%;
-}
+.img-container::after {font-family: "Font Awesome 5 Free";font-weight: 900;font-size: 15px;content: "\f10e";position: relative;top: 12px;right: 150px;color: #fff;background-color: #48a5e8;padding: 12px;height: fit-content;border-radius: 50%;}
 
-.author{letter-spacing: 3px;}
+.author{letter-spacing: 1px;}
 .job{text-transform: uppercase; color: var(--pr);}
-.info{font-size: 1rem; color:#617d98}
+.info{font-size: 1rem; color:#617d98; text-align: justify;}
 
 .button-container{display: flex; gap: 2rem; justify-content: center;}
 .btn{color: var(--pr); background: none; border: none; font-size: 1.2rem; cursor: pointer;}
