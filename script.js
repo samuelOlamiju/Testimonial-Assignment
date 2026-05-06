@@ -36,6 +36,12 @@ const reviews = [
     job: "Fullstack Engineer",
     img: "./assets/Faith.jpg",
     info: "Faith is a self-taught full-stack developer passionate about building digital solutions that improve everyday life, especially in healthcare accessibility. She has a strong foundation in modern web technologies and consistently works on projects that reflect both creativity and problem-solving ability. With multiple repositories ranging from utility apps to full-stack systems, Faith shows consistency, adaptability, and a clear drive to grow. She is also active in sharing knowledge through tech content, making her not just a builder but also a learner who contributes meaningfully to the developer community."
+  },
+  {
+    author: "Funke OLAMIJU",
+    job: "Newbie",
+    img: "./assets/Funke.jpg",
+    info: "She does something, I promise.😁😁"
   }
 ];
 
